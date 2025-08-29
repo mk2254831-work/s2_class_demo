@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animal & File Uploader</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}?v=3">
+
+    <!-- Optional favicon -->
+    <link rel="icon" href="{{ url_for('static', filename='images/cat.png') }}" type="image/png">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>Pick an Animal</h2>
+            <div class="pill-group" id="animalGroup">
+                <label class="pill">
+                    <input type="checkbox" name="animal" value="cat">
+                    <span>Cat</span>
+                </label>
+                <label class="pill">
+                    <input type="checkbox" name="animal" value="dog">
+                    <span>Dog</span>
+                </label>
+                <label class="pill">
+                    <input type="checkbox" name="animal" value="elephant">
+                    <span>Elephant</span>
+                </label>
+            </div>
+            <div id="animalImage" class="preview"></div>
+        </div>
+        <div class="box">
+            <h2>Upload a File</h2>
+            <input type="file" id="fileInput" />
+            <button id="uploadBtn" type="button">Upload</button>
+            <div id="fileInfo"></div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

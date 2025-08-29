@@ -1,0 +1,95 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: #f7f9fc;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.box {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    width: 320px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.pill-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.pill input {
+    display: none;
+}
+
+.pill span {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.pill.active span {
+    background: #4CAF50;
+    color: white;
+    border-color: #4CAF50;
+}
+
+.preview img {
+    margin-top: 15px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.info-grid {
+    margin-top: 15px;
+    text-align: left;
+}
+
+.info-grid div {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+}
+
+.k {
+    font-weight: bold;
+}
+.error {
+    color: red;
+    margin-top: 10px;
+}
